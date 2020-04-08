@@ -22,6 +22,7 @@ import java.io.IOException;
 import jp.wasabeef.glide.transformations.gpu.SepiaFilterTransformation;
 import jp.wasabeef.glide.transformations.gpu.SketchFilterTransformation;
 import jp.wasabeef.glide.transformations.gpu.ToonFilterTransformation;
+import jp.wasabeef.glide.transformations.gpu.VignetteFilterTransformation;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView imageView;
@@ -55,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void applySketch(View view) {
         apply(new SketchFilterTransformation());
+    }
+
+    public void applyVignette(View view) {
+        apply(new VignetteFilterTransformation());
     }
 
     public void choosePhoto(View view) {
